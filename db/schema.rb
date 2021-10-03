@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_10_02_001225) do
   enable_extension "plpgsql"
 
   create_table "posts", force: :cascade do |t|
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.string "title"
     t.string "description"
     t.string "imgs", array: true
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2021_10_02_001225) do
   end
 
   create_table "references", force: :cascade do |t|
-    t.bigint "post_id", null: false
+    t.bigint "post_id"
     t.string "href", array: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

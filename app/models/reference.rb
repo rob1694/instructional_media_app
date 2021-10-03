@@ -1,3 +1,3 @@
 class Reference < ApplicationRecord
-    belongs_to :posts
+    belongs_to :post
 end

@@ -32,6 +32,6 @@ class ReferencesController < ApplicationController
       private
 
       def reference_params
-        params.require(:post_id, :href)
+        params.permit(:post_id, :href)
       end
 end

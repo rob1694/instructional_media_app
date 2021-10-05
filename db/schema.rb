@@ -32,10 +32,9 @@ ActiveRecord::Schema.define(version: 2021_10_02_001225) do
 
   create_table "references", force: :cascade do |t|
     t.bigint "post_id"
-    t.string "href", array: true
+    t.string "href"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["href"], name: "index_references_on_href", using: :gin
     t.index ["post_id"], name: "index_references_on_post_id"
   end
 

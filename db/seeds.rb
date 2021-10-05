@@ -30,8 +30,8 @@ p2 = Post.create(
 
 r1 = Reference.create(
 post_id: 1,   
-href: ["gfhcgvjhbkjln", "dfgukhl"])
+href: ("gfhcgvjhbkjln"))
 
 r2 = Reference.create(
     post_id: 2,
-    href: ["trdyufyiuoihughv", "gh", "trdyuyiugf"])
+    href: ("trdyufyiuoihughv"))
